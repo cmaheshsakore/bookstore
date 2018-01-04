@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tech.traits.mahesh.bookstore.DetailsOfBook"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_heading">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bookname"
+        android:id="@+id/tv_booknameHeading"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_bookName"
+        android:layout_toEndOf="@+id/tv_booknameHeading"
+        android:layout_toRightOf="@+id/tv_booknameHeading"
+        android:textSize="16sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_bookname"
+        android:layout_toEndOf="@+id/tv_booknameHeading"
+        android:layout_toRightOf="@+id/tv_booknameHeading"
+        />
+        <ImageButton
+            android:contentDescription=""
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_edit"
+            android:id="@+id/imbtn_edit"
+            android:background="@color/colourless"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_heading"
+        android:id="@+id/lay_author">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/author"
+        android:id="@+id/tv_author"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_author"
+        android:id="@+id/textView"
+        android:textSize="16sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/et_author"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+        <Button
+            android:layout_below="@+id/et_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_update"
+            android:text="@string/update"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_below="@+id/lay_author"
+        android:id="@+id/tv_descriptionhead"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_below="@id/tv_descriptionhead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_textview"
+        android:id="@+id/tv_description"
+        android:textSize="16sp" />
+
+</RelativeLayout>
